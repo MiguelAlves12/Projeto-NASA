@@ -1,0 +1,77 @@
+﻿<!Document html>
+<html>
+<head>
+		<meta charset="UFT-8"/>
+		<title>Projeto NASA</title>
+		<link rel="stylesheet" href="estilos/estilos_2.css" media="all"/>
+		<link rel="stylesheet" href="estilos/reset.css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+</head>
+<body>
+	<body class="body">
+		<header class="header">
+			<img src="fotos/100.png"/>
+			<nav>
+				<ul>
+					<a class="a1" href="Project_NASA.html"><li>Home</li></a>
+					<a class="a2" href="Project_parte_2_NASA.html"><li>Projeto</li></a>
+				</ul>
+			</nav>
+		</header>
+		<div class="menu2">
+		  <nav>
+			<ul>
+				<a class="a3" href="Projectparte1.html"><li>Mechanic Project</li></a>
+				<a class="a5" href="Projectparte3.html"><li>Sensing</li></a>
+				<a class="a6" href="Projectparte4.html"><li>Flowchart Design</li></a>					
+			</ul>
+		 </nav>
+		</div>
+		<div id="container1">
+			<div class="col1">
+				   <article class="texto1">
+					<h1 class="h1"> Optical Measurement System based on Stereo Photogrammetry </h1>
+					&nbsp
+					  <p>By using a dual camera system, we can simulate the depth-of-sight we’re familiarized with from
+					  our eyes. This technology, known as stereo photogrammetry, allows us to create variety of
+					  perspectives we can create a 3D point cloud array. This technology is already in use in many
+					  factors around the world, measuring parts in production lines for statistic control. This point
+					  cloud array can later be converted to a 3D model of the analyzed ship.</p>
+					  <img src="fotos/Camera2.png" width="400" height="400"/>
+					  <p>Our project also integrates a high-resolution “ordinary” photographic camera sensor to take
+					  frames from the spacecraft to help the analysis and search for anomalies. Additionally, for the
+					  deep parts of the structure, a laser line measurement device makes measurement, creating a
+					  lower resolution 3D model of the parts not covered by the higher-resolution stereo cameras.</p>
+					  <img src="fotos/ZoomLaser.png" width="400" height="400"/>
+					  <p>For estimate purposes, we assumed a 28 mm. focal length coupled to a 35 mm. full frame, 50
+					  MP CMOS sensor, creating a horizontal field view of 65.5º. For safety reasons, we assumed that
+					  the robot shall remain at a minimum of 1 m. This yields a theorical resolution of up to 0.01 mm./pixel
+					  , suitable for deep-learning post-processing. At this distance, 6 pictures should be 
+					  taken for a complete revolution of the Orion. For the 41 m. length, a total of 522 photos must
+					  be taken (with a safety region of 10% on each photo). Assuming they are high quality RAW files,
+					  each weighting 65 MB, a total of about 34 GB of onboard storage must be installed.</p>
+					  <p>Due to the high volume of data, we choose to retain the photos onboard the robot and only 
+					  process them after the scanning mission ends (with the powerful computers abroad Orion).
+					  Although inconvenient, this small delay in the processing does not interfere with the urgency of
+					  operation. The total time for a complete scan should be around 1 hour, observing the
+					  parameters mentioned before.</p>
+					  <p>Because in space there is a great presence of sunlight (which emits many wavelengths at very
+					  high intensities), and the absence of sunlight on the opposite side of the spacecraft, we created
+					  a theoretical analysis logic so that the robot can analyze the structure of the spacecraft without
+					  restrictions. On the dark side of the spacecraft, the analysis would be from the excess reflection
+					  caused by a micro-meteoroid hole when exposed to a powerful light bean from our robot and
+					  thus, when processed, the image would have the location of the damage. On the bright side of
+					  the spacecraft, the analysis shall be done from the lack of reflection because theoretically the
+					  hole will cause a shadow when the white light of the sun is thrown directly into the profile.</p>
+					  <p>However, space-related devices generally use foil for thermal management, making harder to
+					  compare sensor data to a theorical, ideal model. For these parts, a high-resolution CMOS
+					  sensor captures images and, through deep-learning technics, analysis and process it, deciding
+					  when there is a damage in the foil/blanket.</p>
+					  <img src="fotos/GeralFrontal.png" width="200" height="250"/>
+				   </article>
+			</div>		
+		</div>
+	<script src="script/troca_imagem.js"></script>	
+	<footer class="footer"><p>&copy; developed by Miguel de Souza Alves</p></footer>	
+</body>
+</html>
